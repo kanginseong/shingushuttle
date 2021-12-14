@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+
+        android:defaultValue="true"
+        android:key="alarming"
+        android:summary="헤드업알림을 허용합니다."
+        android:title="알림 설정"
+        app:iconSpaceReserved="false"/>
+
+    <ListPreference
+        android:title = "메인화면"
+        android:summary="앱 실행시 바로 보여질 메인화면 설정합니다."
+        android:key = "toSchool"
+        android:defaultValue="fromNam"
+        android:entries="@array/toSchool"
+        android:entryValues="@array/toSchool_val"
+        app:iconSpaceReserved="false"/>
+
+
+</PreferenceScreen>

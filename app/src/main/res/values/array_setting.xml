@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "toSchool">
+        <item>남한산성입구역 > 신구대학교 후문</item>
+        <item>단대오거리역 > 신구대학교 정문</item>
+    </string-array>
+
+    <string-array name = "toSchool_val">
+        <item>fromNam</item>
+        <item>fromDan</item>
+    </string-array>
+
+</resources>

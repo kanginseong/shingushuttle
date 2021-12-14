@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="#727171"
+            android:textStyle="bold"
+            android:text="이용약관"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/section1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/term_checkicon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#727171"
+            android:textStyle="bold"
+            android:textSize="7pt"
+            android:text="서비스 이용약관에 동의가 필요합니다."
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/section1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edge">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <CheckBox
+                    android:id="@+id/term_check_all"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/term_of_use_checkbox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/term_check_all"
+                    android:layout_marginLeft="10dp"
+                    android:text="전체 약관에 동의합니다."
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="〉"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edge">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/term_check1"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/term_of_use_checkbox"
+                    android:button="@android:color/transparent"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/term_check1"
+                    android:text="위치 기반 서비스 이용약관"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="〉" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edge"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <CheckBox
+                    android:id="@+id/term_check2"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/term_of_use_checkbox" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/term_check2"
+                    android:layout_marginLeft="10dp"
+                    android:text="개인 정보 이용약관"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="〉"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edge"
+        android:textColor="@color/tone_Gray"
+        android:textStyle="bold"
+        android:text="확인"
+        android:id="@+id/term_of_use_agree"/>
+</RelativeLayout>
